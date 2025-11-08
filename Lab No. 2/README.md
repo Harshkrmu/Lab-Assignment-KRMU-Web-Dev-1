@@ -8,19 +8,19 @@ The page includes styled navigation, skill tables, buttons, and visual separator
 
 **🎯 Objectives**
 
-> Apply an external CSS stylesheet to manage webpage design.
+--> Apply an external CSS stylesheet to manage webpage design.
 
-> Use element, class, and ID selectors for consistent styling.
+--> Use element, class, and ID selectors for consistent styling.
 
-> Implement a color theme and custom Google Fonts.
+--> Implement a color theme and custom Google Fonts.
 
-> Utilize the CSS box model for spacing and layout adjustments.
+--> Utilize the CSS box model for spacing and layout adjustments.
 
-> Style navigation bars, tables, buttons, and forms.
+--> Style navigation bars, tables, buttons, and forms.
 
-> Apply CSS positioning (sticky header / back-to-top button).
+--> Apply CSS positioning (sticky header / back-to-top button).
 
-> Add visual elements and separators to improve readability.
+--> Add visual elements and separators to improve readability.
 
 **🧱 Project Structure**
 portfolio-project/
@@ -32,38 +32,39 @@ portfolio-project/
 └── README.md
 
 **🎨 Design Highlights**
-> Feature	Description
-> Color Theme	Primary: #2B2D42, Secondary: #8D99AE, Accent: #EF233C
-> Font Used	Poppins
+
+--> Feature	Description
+--> Color Theme	Primary: #2B2D42, Secondary: #8D99AE, Accent: #EF233C
+--> Font Used	Poppins
  (Google Fonts)
-> Navigation Bar	Sticky top navigation with hover effects
-> Box Model	Padding, margins, and borders applied for balanced spacing
-> Skills Table	Alternating row colors and clean borders
-> Buttons	Rounded corners, hover color transitions
-> Positioning	position: sticky for header, “Back to Top” link
-> Visual Elements	<hr> separators and box shadows for structure
+--> Navigation Bar	Sticky top navigation with hover effects
+--> Box Model	Padding, margins, and borders applied for balanced spacing
+--> Skills Table	Alternating row colors and clean borders
+--> Buttons	Rounded corners, hover color transitions
+--> Positioning	position: sticky for header, “Back to Top” link
+--> Visual Elements	<hr> separators and box shadows for structure
 
 **💡 Key HTML Sections**
 
-> Header & Navigation: Displays the site title and menu links.
+--> Header & Navigation: Displays the site title and menu links.
 
-> About Section: Profile picture and personal introduction.
+--> About Section: Profile picture and personal introduction.
 
-> Skills Section: Table of technologies and proficiency levels.
+--> Skills Section: Table of technologies and proficiency levels.
 
-> Projects Section: Short project summary and action button.
+--> Projects Section: Short project summary and action button.
 
-> Contact Section: Form with labels, placeholders, and validation.
+--> Contact Section: Form with labels, placeholders, and validation.
 
-> Footer: Contains copyright and back-to-top link.
+--> Footer: Contains copyright and back-to-top link.
 
 **🧰 Technologies Used**
 
-> HTML5 for structure
+--> HTML5 for structure
 
-> CSS3 for styling and layout
+--> CSS3 for styling and layout
 
-> Google Fonts for typography
+--> Google Fonts for typography
 
 GitHub for version control and submission### 
 
