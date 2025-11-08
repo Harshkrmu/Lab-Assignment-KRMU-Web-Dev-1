@@ -23,13 +23,15 @@ The page includes styled navigation, skill tables, buttons, and visual separator
 --> Add visual elements and separators to improve readability.
 
 **🧱 Project Structure**
+
 portfolio-project/
 │
 ├── index.html
 ├── style.css
 ├── images/
-│   └── profile.jpeg
+│   └── profile.jpg
 └── README.md
+
 
 **🎨 Design Highlights**
 
