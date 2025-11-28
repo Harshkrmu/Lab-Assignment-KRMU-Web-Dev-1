@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO WEBSITE</title>
+    <!-- Link to external CSS  -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">SKIP TO MAIN CONTENT</a>
+
+    <!-- Header with Navigation -->
+    <header>
+        <h1>HARSH</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>WELCOME TO MY PORTFOLIO</h2>
+        <p>Hello! I am a web development student.This is my personal portfolio website.</p>
+    </section>
+
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>ABOUT ME</h2>
+            <img src="profile.jpeg" alt="Profile picture of HARSH" width="400" height="400">
+            <br>
+            <p>I am a web developer with a focus on front-end design and user experience.I enjoy learning new
+                technologies and working on meaningful projects.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>PROJECTS</h2>
+            <ul>
+                <li>
+                    <article>
+                        <h3>PROJECT 1 : Portfolio Website</h3>
+                        <p>A personal one-page website to showcase your bio, skills, and contact details.</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>PROJECT 2 : User Form</h3>
+                        <p>A form wepage with fields like name, email, and message for practicing form handling.</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>PROJECT 3 : Table Content</h3>
+                        <p>An HTML table is a way to display data in rows and columns.</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section style="font-size: 20px;">
+            <h2>    TECHNICAL SKILLS</h2>
+            <table border="1"">
+                <thead>
+                    <tr>
+                        <th>SKILL</th>
+                        <th>LEVEL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Learning</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>CONTACT ME</h2>
+            <form action="">
+                <label for="name">NAME :</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+                <label for="email">EMAIL:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <label for="message">MESSAGE:</label>
+                <textarea id="message" name="message" placeholder="Write your message here" required></textarea><br><br>
+
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- back to top button -->
+
+    <a href="#" class="back-to-top">-BACK TO TOP-</a>
+    
+    <footer>
+        <p>&copy; 2025 My Portfolio | Designed by HARSH</p>
+    </footer>
+
+</body>
+
+
+</html>

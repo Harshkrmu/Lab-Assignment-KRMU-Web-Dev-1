@@ -1,0 +1,307 @@
+/* ===========================
+   GLOBAL STYLES + VARIABLES
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary: #4f46e5;
+    --secondary: #6366f1;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --text: #1e293b;
+    --accent: #ff7b00;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--light);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    padding: 1rem;
+    background: var(--primary);
+    color: white;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* ===========================
+        HEADER
+=========================== */
+
+header {
+    background: white;
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--primary);
+    animation: colorChange 3s infinite alternate;
+}
+
+/* navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary);
+    transform: scale(1.1);
+}
+
+/* ===========================
+        HERO SECTION
+=========================== */
+
+#hero {
+    text-align: center;
+    padding: 6rem 10%;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.3rem;
+}
+
+/* ===========================
+        ABOUT SECTION
+=========================== */
+
+#about {
+    padding: 4rem 10%;
+    text-align: center;
+}
+
+#about img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 1.5rem 0;
+    border: 6px solid var(--secondary);
+    transition: 0.4s ease;
+}
+
+#about img:hover {
+    transform: scale(1.05);
+}
+
+/* ===========================
+        PROJECTS SECTION
+=========================== */
+
+#projects {
+    padding: 4rem 10%;
+}
+
+#projects ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    list-style: none;
+}
+
+#projects article {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.4s ease;
+}
+
+#projects article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ===========================
+        SKILLS SECTION
+=========================== */
+
+#skills {
+    padding: 4rem 10%;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+}
+
+table th, table td {
+    padding: 1rem;
+    border: 2px solid var(--primary);
+}
+
+table th {
+    background: var(--primary);
+    color: white;
+}
+
+/* ===========================
+        CONTACT SECTION
+=========================== */
+
+#contact {
+    padding: 4rem 10%;
+    text-align: center;
+    background: var(--secondary);
+    color: white;
+}
+
+form {
+    width: 80%;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+}
+
+button {
+    margin-top: 1rem;
+    background: var(--accent);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: black;
+    transform: scale(1.05);
+}
+
+/* ===========================
+      BACK TO TOP BUTTON
+=========================== */
+
+.back-to-top {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    color: var(--primary);
+    transition: 0.3s;
+}
+
+.back-to-top:hover {
+    color: var(--accent);
+    transform: scale(1.1);
+}
+
+/* ===========================
+            FOOTER
+=========================== */
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    background: var(--dark);
+    color: white;
+}
+
+/* ===========================
+          ANIMATIONS
+=========================== */
+
+@keyframes colorChange {
+    from { color: var(--primary); }
+    to   { color: var(--accent); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===========================
+        MEDIA QUERIES
+=========================== */
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #hero {
+        padding: 4rem 5%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+}
