@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Store | Harsh</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">ShopSmart</div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#deals">Deals</a></li>
+                <li><a href="#new">New Arrivals</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your Favorite Products, Delivered Fast</h1>
+            <p>Discover the latest gadgets, accessories, and premium items at unbeatable prices.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main">
+
+        <aside class="sidebar">
+            <h2>Filters</h2>
+
+            <div class="filter-group">
+                <h3>Category</h3>
+                <ul>
+                    <li>Mobiles</li>
+                    <li>Headphones</li>
+                    <li>Smartwatches</li>
+                    <li>Laptops</li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h3>Price Range</h3>
+                <ul>
+                    <li>₹0 - ₹1000</li>
+                    <li>₹1000 - ₹5000</li>
+                    <li>₹5000 - ₹10000</li>
+                    <li>₹10000+</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <section id="products" class="products-section">
+            <h2>Featured Products</h2>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+                    <img src="w h.jpeg" alt="Wireless Headphones">
+                    <h3>Wireless Headphones</h3>
+                    <p>Noise-cancelling, 24h battery life.</p>
+                    <span class="price">₹2,999</span>
+                    <button class="btn-add">Add to Cart</button>
+                </article>
+
+                <article class="product-card">
+                    <img src="s w.jpeg" alt="Smart Watch">
+                    <h3>Smart Watch</h3>
+                    <p>Fitness tracking & notifications.</p>
+                    <span class="price">₹1,899</span>
+                    <button class="btn-add">Add to Cart</button>
+                </article>
+
+                <article class="product-card">
+                    <img src="b s.jpeg" alt="Bluetooth Speaker">
+                    <h3>Bluetooth Speaker</h3>
+                    <p>Portable with deep bass.</p>
+                    <span class="price">₹1,499</span>
+                    <button class="btn-add">Add to Cart</button>
+                </article>
+
+                <article class="product-card">
+                    <img src="lp.jpeg" alt="Laptop">
+                    <h3>Lightweight Laptop</h3>
+                    <p>8GB RAM, 256GB SSD</p>
+                    <span class="price">₹38,999</span>
+                    <button class="btn-add">Add to Cart</button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Deals Section -->
+        <section id="deals" class="deals-section">
+            <h2>Special Deals</h2>
+
+            <article class="deal-banner">
+                <h3>Up to 50% Off on Accessories!</h3>
+                <p>Limited-time festival sale. Shop your favorites now.</p>
+                <a href="#products" class="btn">Explore Deals</a>
+            </article>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+
+            <form class="contact-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Write your message" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 ShopSmart. All rights reserved.</p>
+
+        <div class="social">
+            <a href="#" aria-label="Facebook">
+                <svg width="20" height="20" fill="currentColor">
+                    <circle cx="10" cy="10" r="10" />
+                </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+                <svg width="20" height="20" fill="currentColor">
+                    <rect width="20" height="20" rx="4" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

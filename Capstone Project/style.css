@@ -1,0 +1,336 @@
+/* -------------------------------
+   GLOBAL STYLES & VARIABLES
+--------------------------------*/
+:root {
+    --primary: #2d6cdf;
+    --primary-dark: #1e4ead;
+    --accent: #ff9800;
+    --text: #333;
+    --muted: #777;
+    --bg: #437ace;
+    --white: #ffffff;
+
+    --radius: 10px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: var(--primary);
+    color: var(--white);
+    padding: 8px 12px;
+    border-radius: var(--radius);
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* -------------------------------
+   HEADER
+--------------------------------*/
+.header {
+    background: var(--white);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+.nav a:hover {
+    color: var(--primary);
+}
+
+/* -------------------------------
+   HERO SECTION
+--------------------------------*/
+.hero {
+    background: url("images/hero.jpg") center/cover no-repeat;
+    padding: 100px 40px;
+    text-align: center;
+    color: var(--white);
+    animation: fadeIn 1.5s ease;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 15px auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: var(--radius);
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    background: var(--primary-dark);
+}
+
+/* Hero fade animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* -------------------------------
+   MAIN LAYOUT
+--------------------------------*/
+.main {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 30px;
+    padding: 40px;
+}
+
+/* Sidebar */
+.sidebar {
+    background: var(--white);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar h3 {
+    color: var(--primary);
+    margin-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.sidebar li {
+    padding: 6px 0;
+    color: var(--muted);
+}
+
+/* -------------------------------
+   PRODUCTS
+--------------------------------*/
+.products-section h2 {
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: var(--white);
+    padding: 15px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: 0.25s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: var(--radius);
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.product-card p {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.price {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.btn-add {
+    width: 100%;
+    padding: 10px;
+    background: var(--accent);
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    color: var(--white);
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.btn-add:hover {
+    background: #e58600;
+}
+
+/* -------------------------------
+   DEALS SECTION
+--------------------------------*/
+.deals-section {
+    margin-top: 40px;
+}
+
+.deal-banner {
+    background: var(--primary);
+    color: var(--white);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+/* -------------------------------
+   CONTACT FORM
+--------------------------------*/
+.contact-section {
+    margin-top: 60px;
+}
+
+.contact-form {
+    background: var(--white);
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: var(--radius);
+    border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+/* -------------------------------
+   FOOTER
+--------------------------------*/
+.footer {
+    background: var(--white);
+    padding: 20px;
+    margin-top: 60px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.social {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* -------------------------------
+   RESPONSIVE MEDIA QUERIES
+--------------------------------*/
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none; /* Hide sidebar on mobile */
+    }
+}
